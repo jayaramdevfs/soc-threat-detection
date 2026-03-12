@@ -35,7 +35,7 @@ def test_suspicious_login_new_ip(engine):
     
     logs = [
         # First login from normal IP
-        {"timestamp": base_time, "user": "user1", "ip": "192.168.1.10", "status": "accepted"},
+        {"timestamp": base_time, "user": "user1", "ip": "10.0.0.15", "status": "accepted"},
         # Second login from different IP
         {"timestamp": base_time + timedelta(hours=1), "user": "user1", "ip": "10.10.10.10", "status": "accepted"}
     ]
@@ -50,7 +50,7 @@ def test_abnormal_login_time(engine):
     log_time = datetime(2023, 1, 1, 23, 0, 0)
     
     logs = [
-        {"timestamp": log_time, "user": "nightowl", "ip": "192.168.1.50", "status": "accepted"}
+        {"timestamp": log_time, "user": "nightowl", "ip": "10.0.0.50", "status": "accepted"}
     ]
     
     alerts = engine.analyze(logs)
@@ -63,7 +63,7 @@ def test_normal_login_no_alert(engine):
     log_time = datetime(2023, 1, 1, 10, 0, 0)
     
     logs = [
-        {"timestamp": log_time, "user": "normaluser", "ip": "192.168.1.100", "status": "accepted"}
+        {"timestamp": log_time, "user": "normaluser", "ip": "10.0.0.100", "status": "accepted"}
     ]
     
     alerts = engine.analyze(logs)

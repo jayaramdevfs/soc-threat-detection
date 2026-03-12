@@ -48,13 +48,13 @@ Brute force attacks are commonly used to gain unauthorized access to servers. De
 ## 🔍 Example Incident Investigation
 
 **Alert Type:** Brute Force Attack  
-**Source IP:** `192.168.1.100`  
+**Source IP:** `198.51.100.44`  
 **Target User:** `admin`  
 
 **SOC Analyst Investigation Steps:**
 1. Detection engine flagged 10 repeated failed logins mapped across a 5-minute sliding window.
 2. Analyst reviewed the SIEM alerts dynamically generated in the console terminal.
-3. The Source IP (`192.168.1.100`) was verified as anomalous and positively identified as an external attacker.
+3. The Source IP (`198.51.100.44`) was verified as anomalous and positively identified as an external attacker.
 4. Incident report was generated (`incident_report.json`) sequentially for documentation, paving the way for immediate IP blocklisting at the organization's border firewall.
 
 ## 🚀 Installation Steps
@@ -85,7 +85,7 @@ python src/main.py logs/sample_auth.log
 SECURITY ALERT
 Type: Brute Force Attack
 User: admin
-IP: 192.168.1.100
+IP: 198.51.100.44
 Attempts: 10
 ========================================
 
