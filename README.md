@@ -39,8 +39,6 @@ Brute force attacks are commonly used to gain unauthorized access to servers. De
 
 ## 📸 Screenshots
 
-*Recruiters and hiring managers can view the operational results here.*
-
 **Terminal Alert Output:**  
 ![Terminal Alert Output](screenshots/terminal-alert-output.png)
 

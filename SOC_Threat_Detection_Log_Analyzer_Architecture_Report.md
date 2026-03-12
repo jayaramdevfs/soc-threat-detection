@@ -1,6 +1,5 @@
 # 🛡️ Architectural & Threat Assessment Report 
 **Project**: SOC Threat Detection Log Analyzer  
-**Prepared By**: Senior Cybersecurity Architect  
 
 ### **1. Executive Summary**
 The **SOC Threat Detection Log Analyzer** is a lightweight, scalable, and modular telemetry processing utility designed to replicate the ingestions, parsing, and detection pipelines typical of modern Security Information and Event Management (SIEM) systems. 
@@ -31,8 +30,8 @@ From a software engineering security perspective, this tool ranks highly due to 
 * **Containerization (`Dockerfile`):** The program uses a minimal `python:3.9-slim` base image, effectively reducing the active attack surface of the app environment, ensuring fast deployments and immutable runtime behavior.
 * **Documentation (`README.md`):** Comprehensive enough to function as standard operating procedures (SOPs) for Tier-1 SOC analysts who might deploy or maintain the asset. 
 
-### **5. Closing Recommendations**
-This project represents an exceptional foundational architecture for a SOC engineering portfolio. The logic gracefully integrates practical threat intelligence concepts with stable engineering patterns. 
+### **5. Future Roadmap**
+This project lays out a solid and foundational architecture for custom incident detection. The logic integrates practical threat intelligence concepts with scalable backend engineering patterns. 
 
 **Next-Step Expansion Opportunities (V2 Roadmap):**
 * Integration with a threat intelligence feed (e.g., AbuseIPDB) to dynamically enrich malicious IP addresses.
